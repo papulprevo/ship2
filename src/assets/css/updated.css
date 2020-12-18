@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.date-box
+{
+	border: none;
+    border-bottom: 2px solid #077bd4;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.card-top
+{
+	border: none;
+    border-top: 3px solid #077bd4;
+}
+.card-bottom
+{
+	border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.g-card-bottom
+{
+	border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.card-left
+{
+	border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.card-radius
+{
+	border-radius: 25px;
+}
+.graph-r
+{
+	border-radius: 25px;
+}
+.table-bottom-mar
+{
+	margin-bottom: 10px;
+}
+.bor-left
+{
+	border-left: 4px solid #077bd4;
+}
+.bor-right
+{
+	border-right: 4px solid #077bd4;
+}
+.w-20
+{
+	width: 22px;
+}
+.blue
+{
+	color: #077bd4;
+}
+.red
+{
+	color: red;
+}
+.green
+{
+	color: green;
+}
+.black
+{
+	color:black;
+}
+.orange
+{
+	color: #f0560a;
+}
+.m-b-10
+{
+	margin-bottom: 10px;
+}
+th
+{
+  position: sticky;
+  top: 0; /* Don't forget this, required for the stickiness */
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+  text-align: center!important;
+}
+.p-b-2
+{
+	padding-bottom: 1.2rem;
+}
+.dash-bottom
+{
+	border-bottom: 1px dashed #a2aeb8;
+}
+
+.body-tab
+{
+	margin-right: 10px;
+    margin-left: 10px;
+}
+.badge-transparent
+{
+	background-color:	#FFD700;
+	color:black;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 4px;
+	padding-left: 4px;
+}
+.filter
+{
+	width: 15px;
+	box-shadow: none!important;
+	padding-bottom: 2px;
+}
+
+
+td
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	    padding-top: 0px;
+}
+td , p
+{
+	margin-bottom: 0px;
+}
+.p-0
+{
+	padding: 0px;
+}
+.sm
+{
+	height: calc(1.5em + .5rem + 2px);
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    height: 30px;
+    width: 100%;
+}
+.box_sec4 .card.graph-r{
+    background: #fff;
+}
+.br-0{
+	border: none!important;
+}

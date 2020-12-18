@@ -1,0 +1,980 @@
+<body>
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <!--   navbar here -->
+            <nav class="navbar navbar-expand-lg main-navbar sticky" style="background-image:linear-gradient(to bottom right, #077bd4, #064575);">
+                <div class="form-inline mr-auto">
+                    <ul class="navbar-nav mr-3">
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+                            collapse-btn"> <i data-feather="align-justify"></i></a></li>
+                        <!-- <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                            <i data-feather="maximize"></i>
+                            </a>
+                            </li> -->
+                    </ul>
+                    <div class="sidebar-brand">
+                        <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" />
+                        </a>
+                    </div>
+                </div>
+                <ul class="navbar-nav navbar-right">
+                    <li class="dropdown dropdown-list-toggle new_list">
+                        <a class="nav-link nav-link-lg message-toggle"
+                            data-toggle="modal" href="#" style="top: 3px;">
+                            <!-- <i class="fa fa-check-square" data-toggle="tooltip" title=""
+                                style="color: #ffffff;" data-original-title="Check Availability">
+                                </i> -->
+                            <img src="assets/img/check.png" class="w-20">
+                        </a>
+                    </li>
+                    <li class="dropdown dropdown-list-toggle new_list">
+                        <a class="nav-link nav-link-lg message-toggle"
+                            data-toggle="dropdown" href="#" style="top: 3px;">
+                            <!-- <i class="fa fa-road" data-toggle="tooltip" title=""
+                                style="color: #ffffff;">
+                                </i> -->
+                            <img src="assets/img/highway.png" class="w-20">
+                        </a>
+                        <ul class="dropdown sub_li">
+                            <li>
+                                <div class="text-center track_p11">
+                                    <p>Tracking No / Shipyaari ID.</p>
+                                    <input type="text" name="" value="">
+                                    <div class="">
+                                        <button type="button" name="button" class="track_btn">Track</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-list-toggle new_list">
+                        <a class="nav-link nav-link-lg message-toggle"
+                            data-toggle="modal" href="#" style="top: 3px;">
+                            <!--  <i class="fa fa-map-marker"
+                                style="color: #ffffff;">
+                                </i> -->
+                            <img src="assets/img/location.png" class="w-20">
+                        </a>
+                        <ul class="dropdown sub_li">
+                            <li>
+                                <div class="text-center track_p11">
+                                    <p>Enter Pincode</p>
+                                    <input type="text" name="" value="">
+                                    <div class="">
+                                        <button type="button" name="button" class="track_btn">Check</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-list-toggle new_list">
+                        <a class="nav-link nav-link-lg message-toggle"
+                            data-toggle="modal" href="#" style="top: 3px;">
+                            <!-- <i class="fas fa-wallet" data-toggle="tooltip" title=""
+                                style="color: #ffffff;" data-original-title="Wallet Recharge">
+                                </i> -->
+                            <img src="assets/img/wallet.png" class="w-20">
+                        </a>
+                    </li>
+                    <li class="dropdown dropdown-list-toggle new_list">
+                        <a class="nav-link nav-link-lg message-toggle"
+                            data-toggle="modal" href="#" style="top: 3px;">
+                            <!--  <i class="fa fa-credit-card" data-toggle="tooltip" title=""
+                                style="color: #ffffff;" data-original-title="Today Transaction History">
+                                </i> -->
+                            <img src="assets/img/card.png" class="w-20">
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown"
+                            class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                            class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block">John Doe </span></a>
+                        <div class="dropdown-menu dropdown-menu-right pullDown">
+                            <!-- <div class="dropdown-title">Hello Sarah Smith</div> -->
+                            <a href="#" class="dropdown-item has-icon"> <i class="far
+                                fa-user"></i>My Profile
+                            </a>
+                            <!-- <a href="#" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                                Activities
+                                </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                                Settings
+                                </a> -->
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+                <aside id="sidebar-wrapper">
+                    <ul class="sidebar-menu ">
+                        <li class="dropdown">
+                            <a href="index.html" class="nav-link">
+                                <i data-feather="monitor" ></i>
+                                <span>
+                                    <p >Dashboard</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                data-feather="briefcase"></i><span>Orders</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Add Order</a></li>
+                                <li><a class="nav-link" href="#">Process Orders</a></li>
+                                <li><a class="nav-link" href="#">Generate Pickup</a></li>
+                                <li><a class="nav-link" href="#">Download Manifest</a></li>
+                                <li><a class="nav-link" href="#">All Orders</a></li>
+                                <li><a class="nav-link" href="#">Create Quick Shipment</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Returns</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Add Return</a></li>
+                                <li><a class="nav-link" href="#">All Return Orders</a></li>
+                                <li><a class="nav-link" href="#">Refunds</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="mail"></i><span>Shipments</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Track</a></li>
+                                <li><a class="nav-link" href="#">Process NDR</a></li>
+                                <li><a class="nav-link" href="#">Weight Discrepancy</a></li>
+                                <li><a class="nav-link" href="#">RTO</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="copy"></i><span>Customers</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Add Customer</a></li>
+                                <li><a class="nav-link" href="#">Customers Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                data-feather="shopping-bag"></i><span>Billing</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Shipping Charges</a></li>
+                                <li><a class="nav-link" href="#">All Recharges</a></li>
+                                <li><a class="nav-link" href="#">COD Remittance</a></li>
+                                <li><a class="nav-link" href="#">Invoices</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Tools</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">Rate Calculator</a></li>
+                                <li><a class="nav-link" href="#">Pincode-Zone mapping</a></li>
+                                <li><a class="nav-link" href="#">Activity Logs</a></li>
+                                <li><a class="nav-link" href="#">Report</a></li>
+                                <li><a class="nav-link" href="#">Bulk Actions</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="grid"></i><span>Channels</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="basic-table.html">Basic Tables</a></li>
+                                <li><a class="nav-link" href="advance-table.html">Advanced Table</a></li>
+                                <li><a class="nav-link" href="datatables.html">Datatable</a></li>
+                                <li><a class="nav-link" href="export-table.html">Export Table</a></li>
+                                <li><a class="nav-link" href="editable-table.html">Editable Table</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                                data-feather="pie-chart"></i><span>Settings</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="chart-amchart.html">amChart</a></li>
+                                <li><a class="nav-link" href="chart-apexchart.html">apexchart</a></li>
+                                <li><a class="nav-link" href="chart-echart.html">eChart</a></li>
+                                <li><a class="nav-link" href="chart-chartjs.html">Chartjs</a></li>
+                                <li><a class="nav-link" href="chart-sparkline.html">Sparkline</a></li>
+                                <li><a class="nav-link" href="chart-morris.html">Morris</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+                <section class="section">
+                    <div class="d-flex space-between">
+                        <div class="">
+                            <h4>Table</h4>
+                            <ol class="breadcrumb p-0">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Table</li>
+                            </ol>
+                        </div>
+                        <div class=" align-right">
+                            <input type="text" class="form-control date-box" placeholder="Nov 17,20 - Dec 16,20" value="Nov 17,20 - Dec 16,20">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="box_sec2">
+                                <div class="card graph-r" style="height: 460px;">
+                                    <div class="card-header box_shadow_none" style="border-bottom: 1px solid #077bd4;">
+                                        <h4>Service wise Ratio</h4>
+                                    </div>
+                                    <div class="table-responsive m-b-10">
+                                        <table class="dataTable ">
+                                            <thead class="text-center black">
+                                                <tr>
+                                                    <th style="width: 12%;">Shipyaari ID / Order ID &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                   <!--  <th style="width: 11%;">AWB Details &nbsp;<i data-feather="filter" class="filter"></i></th> -->
+                                                    <th style="width: 7%;">Status &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                    <th style="width: 8%;">Service &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                    <th>Fwd. Amt. </th>
+                                                    <th>RTO Amt. </th>
+                                                    <th>COD Amt. </th>
+                                                    <th>Other Amt. </th>
+                                                    <th>Total </th>
+                                                    <th>Weight </th>
+                                                    <th>Ex. Fwd. Amt. </th>
+                                                    <th>Ex. RTO Amt. </th>
+                                                    <th>G. Total </th>
+                                                    <th>GST </th>
+                                                    <th>Invoice Total </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody style="font-size: 14px;" class="black">
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                        <p class="green">1586335370-319676</p>
+                                                         <p class="orange"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                    </td>
+                                                   <!--  <td>
+                                                   </td> -->
+                                                    <td>Out For Delivery  </td>
+                                                    <td>
+                                                        <p class="blue">Zone 3</p>
+                                                        Standard 
+                                                          <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                    </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center"> 303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td class="text-center">  303.00 </td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00</td>
+                                                    <td class="text-center">  303.00  </td>
+                                                    <td>
+                                                        <p class="text-center"><b>303.00</b></p>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="box_sec4">
+                                <div class="card graph-r" style="height: auto;">
+                                    <div class="card-header box_shadow_none" style="border-bottom: 1px solid #077bd4;">
+                                        <h4>Service wise Ratio</h4>
+                                    </div>
+                                    <div class="col-md-12">
+                                      <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                                        <li class="nav-item">
+                                          <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab"
+                                            aria-controls="home" aria-selected="true">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab"
+                                            aria-controls="profile" aria-selected="false">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab"
+                                            aria-controls="contact" aria-selected="false">Contact</a>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content tab-bordered" id="myTab3Content">
+                                        <div class="tab-pane fade show active p-0 br-0" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                                          <div class="card graph-r" style="height: 460px;">
+                                             <div class="table-responsive mb-1 m-b-10 p-0">
+                                                 <table class="dataTable ">
+                                                     <thead class="text-center black">
+                                                         <tr>
+                                                             <th style="width: 14%;">Shipyaari ID / Order ID &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                             <th style="width: 11%;">AWB Details &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                             <th style="width: 5%;">Status &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                             <th style="width: 5%;">Service &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                             <th>Fwd. Amt. </th>
+                                                             <th>RTO Amt. </th>
+                                                             <th>COD Amt. </th>
+                                                             <th>Other Amt. </th>
+                                                             <th>Total </th>
+                                                             <th>Weight </th>
+                                                             <th>Ex. Fwd. Amt. </th>
+                                                             <th>Ex. RTO Amt. </th>
+                                                             <th>G. Total </th>
+                                                             <th>GST </th>
+                                                             <th>Invoice Total </th>
+                                                         </tr>
+                                                     </thead>
+                                                     <tbody style="font-size: 14px;" class="black">
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <p class="blue"><b>SHIPYAARI-1261372</b></p>
+                                                                 <p class="green">1586335370-319676</p>
+                                                             </td>
+                                                             <td>
+                                                                 <p class="green"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                                 <p class="orange"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                             </td>
+                                                             <td>Out For Delivery  </td>
+                                                             <td>
+                                                                 <p class="blue">Zone 3</p>
+                                                                 Standard 
+                                                             </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td> 303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>  303.00 </td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00</td>
+                                                             <td>  303.00  </td>
+                                                             <td>
+                                                                 <p><b>303.00</b></p>
+                                                             </td>
+                                                         </tr>
+                                                     </tbody>
+                                                 </table>
+                                             </div>
+                                          </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                                          Sed sed metus vel lacus hendrerit tempus. Sed efficitur velit tortor, ac efficitur est lobortis
+                                          quis. Nullam lacinia metus erat, sed fermentum justo rutrum ultrices. Proin quis iaculis tellus.
+                                          Etiam ac vehicula eros, pharetra consectetur dui. Aliquam convallis neque eget tellus efficitur,
+                                          eget maximus massa imperdiet. Morbi a mattis velit. Donec hendrerit venenatis justo, eget
+                                          scelerisque tellus pharetra a.
+                                        </div>
+                                        <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                                          Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa,
+                                          gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum
+                                          molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non
+                                          ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices.
+                                          Proin bibendum bibendum augue ut luctus.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col">
+                           <div class="box_sec2">
+                              <div class="card graph-r" style="height: 500px;">
+                                 <div class="card-header box_shadow_none" style="border-bottom: 1px solid #077bd4;">
+                                    <h4>Service wise Ratio</h4>
+                                 </div>
+                                    <div class="card-body body-tab">
+                                   <ul class="nav nav-tabs" id="myTab2" role="tablist">
+                                     <li class="nav-item">
+                                       <a class="nav-link active" id="home-tab2" data-toggle="tab" href="#home2" role="tab"
+                                         aria-controls="home" aria-selected="true">Home <span class="badge badge-transparent">43210</span></a>
+                                     </li>
+                                     <li class="nav-item">
+                                       <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#profile2" role="tab"
+                                         aria-controls="profile" aria-selected="false">Profile <span class="badge badge-transparent">43210</span></a>
+                                     </li>
+                                     <li class="nav-item">
+                                       <a class="nav-link" id="contact-tab2" data-toggle="tab" href="#contact2" role="tab"
+                                         aria-controls="contact" aria-selected="false">Contact <span class="badge badge-transparent">43210</span></a>
+                                     </li>
+                                   </ul>
+                                   <div class="tab-content tab-bordered" id="myTab3Content">
+                                     <div class="tab-pane fade show active p-0" id="home2" role="tabpanel" aria-labelledby="home-tab2">
+                                       <div class="table-responsive m-b-10">
+                                          <table class="dataTable ">
+                                             <thead class="text-center black">
+                                                <tr>
+                                                   <th style="width: 14%;">Shipyaari ID / Order ID &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                   <th style="width: 11%;">AWB Details &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                   <th style="width: 5%;">Status &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                   <th style="width: 5%;">Service &nbsp;<i data-feather="filter" class="filter"></i></th>
+                                                   <th>Fwd. Amt. </th>
+                                                   <th>RTO Amt. </th>
+                                                   <th>COD Amt. </th>
+                                                   <th>Other Amt. </th>
+                                                   <th>Total </th>
+                                                   <th>Weight </th>
+                                                   <th>Ex. Fwd. Amt. </th>
+                                                   <th>Ex. RTO Amt. </th>
+                                                   <th>G. Total </th>
+                                                   <th>GST </th>
+                                                   <th>Invoice Total </th>
+                                                </tr>
+                                             </thead>
+                                             <tbody style="font-size: 14px;" class="black">
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                                <tr>
+                                                   <td>
+                                                      <p style="color: #077bd4;"><b>SHIPYAARI-1261372</b></p>
+                                                      <p style="color: green;">1586335370-319676</p>
+                                                   </td>
+                                                   <td>
+                                                      <p style="color: green;"><i class="fa fa-road"></i> &nbsp;391717670700</p>
+                                                      <p style="color: #f0560a;"> <i class="fa fa-truck"></i> &nbsp;Fedex</p>
+                                                   </td>
+                                                   <td>Out For Delivery  </td>
+                                                   <td>
+                                                      <p style="color: #077bd4;">Zone 3</p>
+                                                      Standard 
+                                                   </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td> 303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>  303.00 </td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00</td>
+                                                   <td>  303.00  </td>
+                                                   <td>
+                                                      <p><b>303.00</b></p>
+                                                   </td>
+                                                </tr>
+                                             </tbody>
+                                             
+                                          </table>
+                                       </div>
+                                     </div>
+                                     <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab2">
+                                       Sed sed metus vel lacus hendrerit tempus. Sed efficitur velit tortor, ac efficitur est lobortis
+                                       quis. Nullam lacinia metus erat, sed fermentum justo rutrum ultrices. Proin quis iaculis tellus.
+                                       Etiam ac vehicula eros, pharetra consectetur dui. Aliquam convallis neque eget tellus efficitur,
+                                       eget maximus massa imperdiet. Morbi a mattis velit. Donec hendrerit venenatis justo, eget
+                                       scelerisque tellus pharetra a.
+                                     </div>
+                                     <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
+                                       Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa,
+                                       gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum
+                                       molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non
+                                       ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices.
+                                       Proin bibendum bibendum augue ut luctus.
+                                     </div>
+                                   </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+               </section>
+            </div>
+           <footer class="main-footer">
+               <div class="footer-left">
+                   2020 Copyright ©
+                   <div class="bullet"></div>
+                   <a href="#">Shipyaari</a> All Rights Reserved
+               </div>
+               <div class="footer-right">
+               </div>
+           </footer>
+         </div>
+    </div>
+    <!-- General JS Scripts -->
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <script src="assets/js/newScript.js"></script>
+    <script src="assets/js/page/index.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+    <script type="text/javascript"></script>
+</body>
