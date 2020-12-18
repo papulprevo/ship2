@@ -9,7 +9,7 @@ import { TemplateComponent } from './smartshipyaari/template/template.component'
 import { AddressBookComponent } from './smartshipyaari/address-book/address-book.component';
 import { ModulesComponent } from './smartshipyaari/modules/modules.component';
 import { ApiDocComponent } from './smartshipyaari/api-doc/api-doc.component';
-import { AddorderComponent } from './order/addorder/addorder.component';git clone https://papulprevo@bitbucket.org/papulprevo/shipyaari.git
+import { AddorderComponent } from './order/addorder/addorder.component';
 import { B2bshipmentComponent } from './order/b2bshipment/b2bshipment.component';
 import { AddbulkComponent } from './order/addbulk/addbulk.component';
 import { AllorderComponent } from './order/allorder/allorder.component';
